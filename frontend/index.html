@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumReverse - Advanced Number Analysis Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-section">
+                <div class="logo">🧮</div>
+                <h1>NumReverse</h1>
+            </div>
+            <p class="subtitle">Advanced Number Symmetry Analysis Engine</p>
+            <div class="tech-badge">Built with Custom Algorithm Engine</div>
+        </header>
+
+        <main>
+            <div class="analysis-panel">
+                <div class="input-section">
+                    <div class="input-group">
+                        <label for="numberInput">Enter Number for Analysis:</label>
+                        <div class="input-wrapper">
+                            <input 
+                                type="number" 
+                                id="numberInput" 
+                                placeholder="Enter any integer (e.g., 12321, 987, 5)"
+                                autocomplete="off"
+                            >
+                            <div class="input-decoration"></div>
+                        </div>
+                    </div>
+                    <button id="checkButton" class="analyze-btn">
+                        <span class="btn-text">Analyze Number</span>
+                        <span class="btn-icon">⚡</span>
+                    </button>
+                </div>
+
+                <div class="result-section" id="resultSection">
+                    <div class="result-card" id="resultCard">
+                        <div class="result-header">
+                            <div class="result-icon" id="resultIcon"></div>
+                            <div class="result-status" id="resultText"></div>
+                        </div>
+                        <div class="result-details" id="resultDetails"></div>
+                        <div class="result-metrics" id="resultMetrics"></div>
+                    </div>
+                </div>
+
+                <div class="test-cases-section">
+                    <h3>Quick Test Cases:</h3>
+                    <div class="test-grid">
+                        <div class="test-case" data-number="12321">
+                            <div class="test-number">12321</div>
+                            <div class="test-label">Perfect Symmetry</div>
+                        </div>
+                        <div class="test-case" data-number="987">
+                            <div class="test-number">987</div>
+                            <div class="test-label">Asymmetric</div>
+                        </div>
+                        <div class="test-case" data-number="5">
+                            <div class="test-number">5</div>
+                            <div class="test-label">Single Digit</div>
+                        </div>
+                        <div class="test-case" data-number="-456">
+                            <div class="test-number">-456</div>
+                            <div class="test-label">Negative</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="system-info">
+                <h4>System Architecture:</h4>
+                <div class="architecture-flow">
+                    <div class="flow-node">Web Interface</div>
+                    <div class="flow-connector">→</div>
+                    <div class="flow-node">Processing Engine</div>
+                    <div class="flow-connector">→</div>
+                    <div class="flow-node">Analysis Core</div>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-item">React-like Architecture</span>
+                    <span class="tech-item">Custom Algorithm</span>
+                    <span class="tech-item">Real-time Processing</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="processing-overlay" id="loadingOverlay">
+        <div class="processing-animation">
+            <div class="processing-circle"></div>
+            <div class="processing-circle"></div>
+            <div class="processing-circle"></div>
+        </div>
+        <p>Processing number analysis...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

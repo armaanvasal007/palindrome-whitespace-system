@@ -1,0 +1,35 @@
+{
+  "name": "numreverse-analysis-engine",
+  "version": "2.0.0",
+  "description": "Advanced Number Symmetry Analysis Engine with Custom Algorithm Integration",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js",
+    "fix-port": "node fix-port-conflict.js",
+    "test": "node test-api.js",
+    "analyze": "node visualize-whitespace.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.22.1"
+  },
+  "keywords": [
+    "number-analysis",
+    "symmetry",
+    "algorithm",
+    "computational-engine",
+    "pattern-recognition"
+  ],
+  "author": "Advanced Systems Developer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/numreverse-analysis-engine.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

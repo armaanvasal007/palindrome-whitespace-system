@@ -1,0 +1,42 @@
+Palindrome Checker in Whitespace - Human Readable Version
+
+This program checks if a number is a palindrome.
+
+ALGORITHM:
+1. Read input number from stdin
+2. Check if number is negative (if so, return 0)
+3. Extract digits and build reversed number
+4. Compare original with reversed number
+5. Output 1 if equal (palindrome), 0 if not
+
+WHITESPACE INSTRUCTION MAPPING:
+Space Space Number = Push number to stack
+Tab Line Feed Tab Space = Read number from input
+Tab Line Feed Space Space = Output number to stdout
+Line Feed Line Feed = End program
+
+ACTUAL WHITESPACE CODE BREAKDOWN:
+The palindrome.ws file contains:
+- Input reading instructions
+- Digit extraction and reversal logic  
+- Comparison operations
+- Output generation
+
+EDGE CASES HANDLED:
+- Single digit numbers (always palindrome)
+- Negative numbers (never palindrome)
+- Numbers with trailing zeros
+- Invalid input (treated as non-palindrome)
+
+EXECUTION FLOW:
+Input → Whitespace Interpreter → Core Logic → Output (0 or 1)
+
+The Whitespace program is executed by the backend server which:
+1. Receives HTTP request with number
+2. Passes number to Whitespace executor
+3. Whitespace program processes the logic
+4. Returns 1 (palindrome) or 0 (not palindrome)
+5. Backend formats response as JSON
+
+Note: Whitespace uses only spaces, tabs, and linefeeds as meaningful characters.
+All other characters are ignored as comments.
